@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "util.lb.com.utils"
@@ -15,6 +15,20 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean","LOG_DEBUG","false"
+//            resValue ("string","app_name","release app")
+//            resValue ("color","appcolor","#189299")
+        }
+        debug{
+            buildConfigField "boolean","LOG_DEBUG","true"
+//            resValue ("string","app_name","debug app")
+//            resValue ("color","appcolor","#000000")
+        }
+    }
+
+    productFlavors{
+        demo{
+            versionName "1.0.0"
         }
     }
 }
