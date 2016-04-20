@@ -5,4 +5,6 @@ package util.lb.com.utils;
  */
 public class Constant {
     public static String CONTANT_TEST = "demo constant";
+
+    public static String DIR_IMAGE_CACHE = "XXXXXX";
 }
