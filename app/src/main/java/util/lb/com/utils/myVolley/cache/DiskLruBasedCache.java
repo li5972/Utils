@@ -14,10 +14,10 @@ import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 import android.util.Log;
 
-import com.android.volley.BuildConfig;
 import com.android.volley.Cache;
 import com.android.volley.VolleyLog;
 
+import util.lb.com.utils.BuildConfig;
 import util.lb.com.utils.myVolley.image.ImageUtils;
 import util.lb.com.utils.myVolley.cache.DiskBasedCache.CacheHeader;
 import util.lb.com.utils.myVolley.util.Utils;
